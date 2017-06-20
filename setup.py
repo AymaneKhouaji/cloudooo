@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import sys
 
-version = '1.2.5-dev'
+version = '1.2.5.dev0'
 
 def read(name):
     return open(name).read()
