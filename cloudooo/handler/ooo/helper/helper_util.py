@@ -20,6 +20,6 @@ def getServiceManager(host, port, uno_path, office_binary_path):
                                                                   uno_context)
   # Connect to the running OpenOffice.org and get its
   # context.
-  uno_connection = resolver.resolve("uno:socket,host=%s,port=%s;urp;StarOffice.ComponentContext" % (host, port))
+  uno_connection = resolver.resolve("uno:socket,host=localhost,port=4062;urp;StarOffice.ComponentContext")
   # Get the ServiceManager object
   return uno_connection.ServiceManager
